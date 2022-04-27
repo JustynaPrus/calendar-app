@@ -1,0 +1,162 @@
+[
+  {
+    "dayId": 1,
+    "name": "poniedziałek",
+    "date": "2022-05-02",
+    "meetings": []
+  },
+  {
+    "dayId": 2,
+    "name": "wtorek",
+    "date": "2022-05-03",
+    "meetings": [
+      {
+        "name": "Akshit",
+        "surname": "Moradabad",
+        "companyName": "Google",
+        "date": "2022-05-03",
+        "hour": "09:30"
+      }
+    ]
+  },
+  {
+    "dayId": 3,
+    "name": "środa",
+    "date": "2022-05-04",
+    "meetings": []
+  },
+  {
+    "dayId": 4,
+    "name": "czwartek",
+    "date": "2022-05-05",
+    "meetings": []
+  },
+  {
+    "dayId": 5,
+    "name": "piątek",
+    "date": "2022-05-06",
+    "meetings": []
+  },
+  {
+    "dayId": 6,
+    "name": "poniedziałek",
+    "date": "2022-05-09",
+    "meetings": [
+      {
+        "name": "Anna",
+        "surname": "Kania",
+        "companyName": "PZU",
+        "date": "2022-05-09",
+        "hour": "11:30"
+      }
+    ]
+  },
+  {
+    "dayId": 7,
+    "name": "wtorek",
+    "date": "2022-05-10",
+    "meetings": []
+  },
+  {
+    "dayId": 8,
+    "name": "środa",
+    "date": "2022-05-11",
+    "meetings": []
+  },
+  {
+    "dayId": 9,
+    "name": "czwartek",
+    "date": "2022-05-12",
+    "meetings": [
+      {
+        "name": "Kacper",
+        "surname": "Nowak",
+        "companyName": "Microsoft",
+        "date": "2022-05-12",
+        "hour": "10:30"
+      }
+    ]
+  },
+  {
+    "dayId": 10,
+    "name": "piątek",
+    "date": "2022-05-13",
+    "meetings": [
+      {
+        "name": "Tomek",
+        "surname": "Kowal",
+        "companyName": "PGNIG",
+        "date": "2022-05-13",
+        "hour": "12:30"
+      }
+    ]
+  },
+  {
+    "dayId": 11,
+    "name": "poniedziałek",
+    "date": "2022-05-16",
+    "meetings": []
+  },
+  {
+    "dayId": 12,
+    "name": "wtorek",
+    "date": "2022-05-17",
+    "meetings": []
+  },
+  {
+    "dayId": 13,
+    "name": "środa",
+    "date": "2022-05-18",
+    "meetings": []
+  },
+  {
+    "dayId": 14,
+    "name": "czwartek",
+    "date": "2022-05-19",
+    "meetings": []
+  },
+  {
+    "dayId": 15,
+    "name": "piątek",
+    "date": "2022-05-20",
+    "meetings": []
+  },
+  {
+    "dayId": 16,
+    "name": "poniedziałek",
+    "date": "2022-05-23",
+    "meetings": [
+      {
+        "name": "Marcin",
+        "surname": "Smalec",
+        "companyName": "Sabre",
+        "date": "2022-05-23",
+        "hour": "09:30"
+      }
+    ]
+  },
+  {
+    "dayId": 17,
+    "name": "wtorek",
+    "date": "2022-05-24",
+    "meetings": []
+  },
+  {
+    "dayId": 18,
+    "name": "środa",
+    "date": "2022-05-25",
+    "meetings": []
+  },
+  {
+    "dayId": 19,
+    "name": "czwartek",
+    "date": "2022-05-26",
+    "meetings": []
+  },
+  {
+    "dayId": 20,
+    "name": "piątek",
+    "date": "2022-05-27",
+    "meetings": []
+  }
+]

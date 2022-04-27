@@ -1,10 +1,13 @@
-import "./App.css";
+import { Wrapper } from "./App.styles";
+import { GlobalStyles } from "./constans/GlobalStyle";
+import { Calendar } from "./components/Calendar/Calendar";
 
 function App() {
   return (
-    <div className="App">
-      <p>Hi</p>
-    </div>
+    <Wrapper>
+      <GlobalStyles />
+      <Calendar />
+    </Wrapper>
   );
 }
 

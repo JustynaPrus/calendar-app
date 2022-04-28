@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { StyledForm, Wrapper } from "./DataForm.styles";
 
 export const DataForm = (props) => {
   const [name, setName] = useState("");
@@ -43,18 +44,31 @@ export const DataForm = (props) => {
 
   return (
     <>
-      <form>
-        <p>Dodaj spotkanie</p>
-        <label>Data</label>
-        <input type="date" value={date} onChange={changeDate} />
-        <label>Godzina</label>
-        <input type="time" value={hour} onChange={changeHour} />
-        <label>Name</label>
-        <input type="text" value={name} onChange={changeName} />
-        <label>Surname</label>
-        <input type="text" value={surname} onChange={changeSurname} />
-        <button onClick={transferValue}>Dodaj</button>
-      </form>
+      <StyledForm>
+        <h3>Dodaj spotkanie</h3>
+        <Wrapper>
+          <div>
+            <label>Data</label>
+            <input type="date" value={date} onChange={changeDate} />
+          </div>
+
+          <div>
+            <label>Godzina</label>
+            <input type="time" value={hour} onChange={changeHour} />
+          </div>
+
+          <div>
+            <label>Name</label>
+            <input type="text" value={name} onChange={changeName} />
+          </div>
+
+          <div>
+            <label>Surname</label>
+            <input type="text" value={surname} onChange={changeSurname} />
+          </div>
+          <button onClick={transferValue}>Dodaj</button>
+        </Wrapper>
+      </StyledForm>
     </>
   );
 };

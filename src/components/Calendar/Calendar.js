@@ -1,11 +1,13 @@
 import { useState } from "react";
 import dataList from "../../Data/allData";
-import { Wrapper, Container } from "./Calendar.styles";
+import { Wrapper, Container, StyledTable } from "./Calendar.styles";
 import { DataForm } from "../Atoms/DataForm";
 
 export const Calendar = () => {
   const [dataMeetings, setDataMeetings] = useState([]);
   const [allData, setAllData] = useState(dataList);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isActive, setIsActive] = useState(false);
 
   const addMeeting = (data) => {
     setDataMeetings(data);
@@ -19,9 +21,15 @@ export const Calendar = () => {
     console.log(allData);
   };
 
+  const addActive = (el) => {
+    if (activeIndex + el.dayId <= activeIndex + 5) {
+      setIsActive(true);
+    }
+  };
+
   const table = allData.map((el) => {
     return (
-      <table key={el.dayId}>
+      <StyledTable key={el.dayId}>
         <thead>
           <tr>
             <td>
@@ -29,7 +37,7 @@ export const Calendar = () => {
             </td>
             <td>
               <p>
-                {el.name} {el.date}
+                <strong>{el.name}</strong> {el.date}
               </p>
             </td>
           </tr>
@@ -39,21 +47,25 @@ export const Calendar = () => {
             return (
               <tr key={index}>
                 <td>{el.hour}</td>
-                <td>{el.name}</td>
-                <td>{el.surname}</td>
-                <td>{el.companyName}</td>
+                <td>
+                  {el.name} {el.surname}
+                  <br />
+                  {el.companyName}
+                </td>
               </tr>
             );
           })}
         </tbody>
-      </table>
+      </StyledTable>
     );
   });
 
   return (
     <>
       <Container>
-        <h1>Kalendarz spotkań</h1>
+        <header>
+          <h1>Kalendarz spotkań</h1>
+        </header>
         <DataForm func={addMeeting} />
         <Wrapper>{table}</Wrapper>
       </Container>

@@ -2,20 +2,18 @@ import { useState } from "react";
 import dataList from "../../Data/allData";
 
 export const useAddMeeting = () => {
-  const [dataMeetings, setDataMeetings] = useState([]);
   const [allData, setAllData] = useState(dataList);
   const [activeIndex, setActiveIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
   const addMeeting = (data) => {
-    setDataMeetings(data);
-    console.log(dataMeetings);
-    allData.forEach((el) => {
-      if (dataMeetings.date === el.date) {
-        el.meetings.push(dataMeetings);
+    const newMeetings = allData.map((el) => {
+      if (data.date === el.date) {
+        el.meetings = [...el.meetings, data];
       }
+      return el;
     });
-    setAllData(allData);
+    setAllData(newMeetings);
     console.log(allData);
   };
 

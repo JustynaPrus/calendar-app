@@ -2,8 +2,10 @@ import { StyledTable, Wrapper } from "./Table.styles";
 import { useAddMeeting } from "../useAddMeeting/useAddMeting";
 import { Meetings } from "../Atoms/Meeting/Mettings";
 
-export const Table = () => {
-  const { allData, isActive } = useAddMeeting();
+//date-fns
+
+export const Table = ({ allData }) => {
+  const isActive = false;
 
   return (
     <Wrapper>

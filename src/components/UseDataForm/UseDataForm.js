@@ -1,13 +1,10 @@
 import { useState } from "react";
-import { useAddMeeting } from "../useAddMeeting/useAddMeting";
 
-export const useDataForm = () => {
+export const useDataForm = ({ addMeeting }) => {
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [date, setDate] = useState("");
   const [hour, setHour] = useState("");
-
-  const { addMeeting } = useAddMeeting();
 
   const changeName = (event) => {
     setName(event.target.value);

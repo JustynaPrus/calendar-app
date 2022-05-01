@@ -4,17 +4,15 @@ import { useAddMeeting } from "../useAddMeeting/useAddMeting";
 import { Table } from "../Table/Table";
 
 export const Calendar = () => {
-  const { addMeeting, isActive, addActive } = useAddMeeting();
+  const { addMeeting, addActive, allData } = useAddMeeting();
 
   return (
-    <>
-      <Container>
-        <header>
-          <h1>Kalendarz spotkań</h1>
-        </header>
-        <DataForm addMeeting={addMeeting} />
-        <Table addActive={(el) => addActive(el)} />
-      </Container>
-    </>
+    <Container>
+      <header>
+        <h1>Kalendarz spotkań</h1>
+      </header>
+      <DataForm addMeeting={addMeeting} />
+      <Table addActive={(el) => addActive(el)} allData={allData} />
+    </Container>
   );
 };

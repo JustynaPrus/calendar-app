@@ -1,7 +1,7 @@
 import { StyledForm, Wrapper } from "./DataForm.styles";
 import { useDataForm } from "../UseDataForm/UseDataForm";
 
-export const DataForm = () => {
+export const DataForm = ({ addMeeting }) => {
   const {
     changeDate,
     changeHour,
@@ -12,7 +12,7 @@ export const DataForm = () => {
     surname,
     date,
     hour,
-  } = useDataForm();
+  } = useDataForm({ addMeeting });
 
   return (
     <>
